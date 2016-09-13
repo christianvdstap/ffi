@@ -19,10 +19,12 @@ namespace wrapper {
 	
 	Persistent<Function> Wrapper::constructor;
 	
+	struct simple Wrapper::simple_;
+	
 	Wrapper::Wrapper() {
 		struct simple s = {1};
 		simpleFunc(&s);
-		simple_ = s;
+		this->simple_ = s;
 	}
 	
 	Wrapper::~Wrapper() {

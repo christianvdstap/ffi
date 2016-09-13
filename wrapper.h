@@ -18,7 +18,7 @@ namespace wrapper {
 			static v8::Persistent<v8::Function> constructor;
 
 			static void GetSimple(const v8::FunctionCallbackInfo<v8::Value>& args);
-			struct simple simple_;
+			static struct simple simple_;
 	};
 } // Namespace wrapper
 

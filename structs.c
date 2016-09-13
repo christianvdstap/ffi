@@ -27,9 +27,9 @@ int simplePointerFunc(struct simple **param) {
 
 int parentFunc(struct parent **p) {
 	struct child *c = (struct child*) malloc(sizeof(struct child));
-	c->name = "child";
+	c->name = (char*)"child";
 	struct parent *p2 = (struct parent*) malloc(sizeof(struct parent));
-	p2->name = "parent";
+	p2->name = (char*)"parent";
 	p2->child = c;
 	*p = p2;
 	return 0;

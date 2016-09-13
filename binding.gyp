@@ -3,7 +3,6 @@
     {
       "target_name": "addon",
       "sources": [ "addon.cc", "wrapper.cc", "structs.c" ],
-      "include_dirs": ["."]
     }
   ]
 }
