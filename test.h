@@ -1,4 +1,8 @@
+#ifndef TEST_H
+#define TEST_H
+
 #include "structs.h"
+
 
 namespace test{
 	class Test {
@@ -13,3 +17,5 @@ namespace test{
 			static struct simple simple_;
 	};
 }
+
+#endif
